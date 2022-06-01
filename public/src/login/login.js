@@ -1,9 +1,9 @@
 
-// refresh clock ever second
+// live clock
 const clock = document.querySelector('.clock')
 let time = new Date().toDateString() + " " + new Date().toLocaleTimeString()
 clock.textContent = time
 setInterval(() => {
-  let time = new Date().toDateString() + " " + new Date().toLocaleTimeString();
+  time = new Date().toDateString() + " " + new Date().toLocaleTimeString();
   clock.textContent = time
-}, 1000)
+}, 500)

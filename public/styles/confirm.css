@@ -69,23 +69,28 @@ button{
 }
 button:active {
     border: 3px inset;
+    background-color: green;
 }
 
 .checkbox-div{
     position: fixed;
     top: 75%;
-    left: 60%;
-    width: 500px;
-    height: 45px;
-    border: 2px solid black;
+    left: 54%;
+    width: 400px;
+    height: 80px;
     text-align: center;
 }
 .checkbox{
-    width: 50px;
-    height: 50px;
+    margin: 0;
+    width: 70px;
+    height: 70px;
     float: left;
+    vertical-align: top;
 }
 .checkbox-text{
-    margin: 10px;
-    float: right;
+    margin-top: 18px;
+    margin-left: 10px;
+    font-size: 200%;
+    font-weight: lighter;
+    float: left;
 }
