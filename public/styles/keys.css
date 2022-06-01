@@ -1,0 +1,80 @@
+/* entire page */
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+.button-grid {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* all buttons */
+button{
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px outset;
+    background-color: green;
+    font-size: 100%;
+    width: 100px;
+    height: 80px;
+    font-weight: bold;
+    vertical-align: top;
+}
+button:active {
+    border: 3px inset;
+}
+
+.id{
+    width: 250px;
+}
+
+/* numbers panel */
+.panel{
+    display: block;
+    width: 480px;
+    height: 480px;
+    text-align: center;
+    float: left;
+}
+
+/* letters panel */
+.lpanel{
+    display: none;
+    width: 480px;
+    height: 480px;
+    text-align: center;
+    float: left;
+}
+
+/* left side buttons */
+.buttonBox {
+    display: block;
+    width: 130px;
+    height: 480px;
+    float: left;
+}
+.button2{
+    margin-left: 0;
+}
+
+/* input box */
+.box {
+    margin-left: 20px;
+    width: 620px;
+    height: 70px;
+    text-align: center;
+}
+#header{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+#text-input{
+    font-weight: bolder;
+    font-size: 15px;
+}

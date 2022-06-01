@@ -1,0 +1,100 @@
+/* page */
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+    background-color: rgb(25, 25, 200);
+    color: white;
+}
+.button-grid {
+    position: fixed;
+  top: 35%;
+  left: 35%;
+  margin-top: -150px;
+  margin-left: -100px;
+  text-align: center;
+}
+
+/* all buttons */
+button{
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px outset;
+    background-color: skyblue;
+    font-size: 100%;
+    width: 100px;
+    height: 80px;
+    font-weight: bold;
+    vertical-align: top;
+}
+button:active {
+    border: 3px inset;
+}
+
+.id{
+    width: 250px;
+}
+
+/* numbers panel */
+.panel{
+    display: block;
+    width: 480px;
+    height: 480px;
+    text-align: center;
+    float: left;
+}
+
+/* letters panel */
+.lpanel{
+    display: none;
+    width: 480px;
+    height: 480px;
+    text-align: center;
+    float: left;
+}
+
+/* left side buttons */
+.buttonBox {
+    display: block;
+    width: 130px;
+    height: 480px;
+    float: left;
+}
+.button2{
+    margin-left: 0;
+}
+
+/* badge headers */
+.box {
+    margin-left: 20px;
+    width: 620px;
+    height: 70px;
+    text-align: center;
+}
+.badge-header{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 26px;
+    font-family: 'Tahoma', Arial;
+}
+.badge-text{
+    margin: 5px;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: 'Tahoma', Arial;
+}
+
+/* badge input */
+.badge-input{
+    margin: 0;
+    background-color: transparent;
+    border: 2px inset white;
+    color: white;
+    font-size: 18px;
+    border-radius: 2px;
+    width: 250px;
+    height: 20px;
+}
