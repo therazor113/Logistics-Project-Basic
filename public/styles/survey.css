@@ -1,0 +1,111 @@
+/* page */
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+    background-color: rgb(25, 25, 200);
+    color: white;
+}
+
+/* buttons */
+button{
+    margin: 40px;
+    background-color: green;
+    border-radius: 10px;
+    border: 2px outset;
+    font-size: 180%;
+    width: 200px;
+    height: 80px;
+    font-weight: bold;
+}
+button:active {
+    border: 3px inset;
+    background-color: green;
+}
+.insp-yes{
+    background-color: white;
+}
+.insp-no{
+    background-color: white;
+}
+
+/* grid container */
+.container{
+    display: grid;
+    margin: 10px;
+    width: 98%;
+    height: 98%;
+    box-sizing: border-box;
+    grid-template-columns: 1fr;
+    grid-template-rows: [head] 3% [weight] 1fr [inspect] 1fr [info] 1fr;
+}
+
+/* flex header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    grid-row: head / head;
+}
+.clock-version{
+    display: flex;
+}
+
+/* weight flexbox */
+.weight-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-row: weight / weight;
+    border: 2px solid black;
+}
+.weight-text {
+    margin-left: 10px;
+    display: flex;
+    align-items: baseline;
+}
+.weight-buttons{
+    display: flex;
+}
+.weight {
+    font-size: 40px;
+}
+
+/* inspection flexbox */
+.inspection-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-top: none;
+}
+.insp-text {
+    margin-left: 10px;
+    width: 300px;
+}
+
+/* info flexbox */
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-top: none;
+}
+.info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    height: 250px;
+}
+.logout {
+    margin-right: 130px;
+}
+
