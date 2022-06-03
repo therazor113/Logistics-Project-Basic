@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="">
+        <script type="module" src="./src/get-work.js"></script>
+        <link rel="stylesheet" href="./styles/get-work.css">
     </head>
 <body>
 
     <section class="grid-sec">
-        <div class="area-div">
-            <h2 class="area-code">[NULL]</h2>
+        <div class="header">
+            <div class="area-div">
+                <h2 class="area-code">[NULL]</h2>
+            </div>
+
+            <div class="clock-div">
+                <h2 class="clock"></h2>
+            </div>
         </div>
 
-        <div class="clock-div">
-            <h2 class="clock"></h2>
+        <div class="welcome-div">
+            <p class="welcome">WELCOME John Johnson</p>
+        </div>
+
+        <div class="wel-buttons">
+            <button class="log-off" onclick="location.href='login.html'">LOG OFF</button>
+            <button class="retry" onclick="location.reload()">RETRY</button>
+        </div>
+
+        <div class="retry-message">
+            <p>There is no assignment available. Please see your Supervisor <br> or click RETRY</p>
+        </div>
+
+        <div class="func-buttons">
+            <button class="live-green-sheet">Live Green Sheet</button>
+            <br>
+            <button class="manual-pro" onclick="location.href='keypad.html'">MANUAL PRO ENTRY</button>
         </div>
     </section>
 
