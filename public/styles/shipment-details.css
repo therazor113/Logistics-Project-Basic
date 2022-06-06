@@ -13,9 +13,8 @@ html, body{
     color: white;
 }
 
-/* buttons */
+/* button styles */
 button{
-    margin-top: 40px;
     background-color: lightgray;
     border-radius: 10px;
     border: 2px outset;
@@ -28,7 +27,6 @@ button:not(.dimension):active {
     border: 3px inset;
     background-color: green;
 }
-
 .plus, .minus {
     margin-top: 10px;
     background-color: orange;
@@ -36,7 +34,6 @@ button:not(.dimension):active {
     height: 70px;
     border-radius: 0;
     font-size: 60px;
-    justify-self: right;
 }
 
 /* grid container */
@@ -51,6 +48,7 @@ button:not(.dimension):active {
     gap: 10px
 }
 
+/* header flex */
 .header {
     display: flex;
     grid-column: 1 / 3;
@@ -64,28 +62,33 @@ button:not(.dimension):active {
     margin-right: 20px;
 }
 
+/* info column */
 .info-container {
+    display: grid;
+    grid-template-rows: 1fr 40%;
     border: 2px solid black;
 }
 
-/* HU weight capture buttons */
+/* HU weight capture grid box */
 .hu-buttons{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    border: 2px solid black;
+    grid-row: 2 / 2;
+    grid-template-rows: 40% 1fr;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 .counter-container {
+    margin: 10px;
     grid-row: 1 / 2;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
 }
-
 .counter {
-    justify-self: left;
-    align-self: center;
+    font-size: 30px;
 }
 .keypad{
-    margin: 50px;
+    margin: 40px;
     border-radius: 8px;
     border: 2px outset black;
     background-color: green;
@@ -94,34 +97,29 @@ button:not(.dimension):active {
     width: 90px;
     height: 90px;
 }
-
 .weight-container {
-    grid-row: 2 / 2;
-    display: flex;
-    justify-content: right;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 10px;
+    justify-items: center;
     align-items: center;
-}
-.capture {
-    margin: 40px;
 }
 .live-weight {
-    font-size: 70px;
-    margin: 40px;
-    align-self: center;
+    font-size: 80px;
     font-weight: lighter;
-    border: 2px solid black;
+    margin-top: 20px;
 }
-
-.ex-buttons {
-    grid-row: 3 / 3;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-.complete {
-    margin: 40px;
+.capture {
+    margin-top: 20px;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
 }
 .dimension {
     color: gray;
-    margin: 40px;
+    grid-row: 2 / 2;
+}
+.complete {
+    grid-row: 2 / 2;
 }

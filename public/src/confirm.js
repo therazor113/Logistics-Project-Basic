@@ -1,12 +1,11 @@
 
 // live clock
 const clock = document.querySelector('.clock')
-let time = new Date().toDateString() + " " + new Date().toLocaleTimeString()
-clock.textContent = time
-setInterval(() => {
-  time = new Date().toDateString() + " " + new Date().toLocaleTimeString();
-  clock.textContent = time
-}, 500)
+window.onload = () => {setInterval(() => {
+  let date = new Date()
+  let time = date.toDateString() + " " + date.toLocaleTimeString()
+  clock.textContent = time, 1000}
+)}
 
 // checkbox
 let check = null
