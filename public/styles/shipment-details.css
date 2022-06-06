@@ -1,3 +1,4 @@
+/* page */
 *{
     margin: 0;
     padding: 0;
@@ -36,7 +37,7 @@ button:not(.dimension):active {
     font-size: 60px;
 }
 
-/* grid container */
+/* main grid container */
 .container{
     display: grid;
     margin: 10px;
@@ -45,7 +46,6 @@ button:not(.dimension):active {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3% 1fr;
     box-sizing: border-box;
-    gap: 10px
 }
 
 /* header flex */
@@ -65,8 +65,30 @@ button:not(.dimension):active {
 /* info column */
 .info-container {
     display: grid;
-    grid-template-rows: 1fr 40%;
+    grid-template-rows: 30% 70%;
     border: 2px solid black;
+}
+/* info text */
+.info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.info-text h2 {
+    font-size: 35px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    width: 88%;
+}
+.info-text span {
+    font-weight: lighter;
+    font-size: 30px;
+}
+.ex-info {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-items: space-between;
 }
 
 /* HU weight capture grid box */
@@ -76,6 +98,9 @@ button:not(.dimension):active {
     grid-template-rows: 40% 1fr;
     border: 1px solid white;
     border-radius: 10px;
+    align-self: flex-end;
+    width: 650px;
+    height: 490px;
 }
 .counter-container {
     margin: 10px;
@@ -86,6 +111,10 @@ button:not(.dimension):active {
 }
 .counter {
     font-size: 30px;
+}
+.counter span {
+    font-weight: lighter;
+    font-size: 40px;
 }
 .keypad{
     margin: 40px;
