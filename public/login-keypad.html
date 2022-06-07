@@ -5,50 +5,50 @@
         <script type="module" src="./src/login/login-numbers.js"></script>
         <link rel="stylesheet" href="./styles/login-keypad.css">
     </head>
-    <body>
+<body>
+    <section class="container">
+        <div class="button-div">
+            <div class="badge-container">
+                <p class="badge-header">Please enter your badge ID. Then press Enter.</p>
+                    <p class="badge-text">Badge ID: &emsp;
+                        <input class="badge-input" type="input">
+                    </p>
+                <p class="message"></p>
+            </div>
 
-        <section class="button-grid">
-        <div class="box">
-            <p class="badge-header">Please enter your badge ID. Then press Enter.</p>
-                <p class="badge-text">Badge ID: &emsp;
-                    <input class="badge-input" type="input">
-                </p>
-            <p class="message"></p>
-        </div>
+            <div class="panel">
+                <button class="key">1</button>
+                <button class="key">2</button>
+                <button class="key">3</button>
+                <button class="key">4</button>
+                <button class="key">5</button>
+                <button class="key">6</button>
+                <button class="key">7</button>
+                <button class="key">8</button>
+                <button class="key">9</button>
+                <button class="key">0</button>
+            </div>
 
-        <div class="panel">
-            <button class="key">1</button>
-            <button class="key">2</button>
-            <button class="key">3</button>
-            <button class="key">4</button>
-            <button class="key">5</button>
-            <button class="key">6</button>
-            <button class="key">7</button>
-            <button class="key">8</button>
-            <button class="key">9</button>
-            <button class="key">0</button>
-        </div>
+            <div class="lpanel">
+                <button class="lkey"></button>
+                <button class="lkey">ABC</button>
+                <button class="lkey">DEF</button>
+                <button class="lkey">GHI</button>
+                <button class="lkey">JKL</button>
+                <button class="lkey">MNO</button>
+                <button class="lkey">PQRS</button>
+                <button class="lkey">TUV</button>
+                <button class="lkey">WXYZ</button>
+                <button class="lkey"></button>
+            </div>
 
-        <div class="lpanel">
-            <button class="lkey"></button>
-            <button class="lkey">ABC</button>
-            <button class="lkey">DEF</button>
-            <button class="lkey">GHI</button>
-            <button class="lkey">JKL</button>
-            <button class="lkey">MNO</button>
-            <button class="lkey">PQRS</button>
-            <button class="lkey">TUV</button>
-            <button class="lkey">WXYZ</button>
-            <button class="lkey"></button>
-        </div>
-
-        <div class="buttonBox">
-            <button class="button2" id="minus">Back</button>
-            <button class="button2" id="enter">Enter</button>
-            <button class="button2" onclick="location.href='login.html'">Cancel</button>
-            <button class="button2" id="tKeypad">ABC</button>
+            <div class="buttonBox">
+                <button class="button2" id="minus">Back</button>
+                <button class="button2" id="enter">Enter</button>
+                <button class="button2" onclick="location.href='login.html'">Cancel</button>
+                <button class="button2" id="tKeypad">ABC</button>
+            </div>
         </div>
     </section>
-
-    </body>
+</body>
 </html>

@@ -1,5 +1,5 @@
-/* entire page */
-html, body{
+/* page defaults */
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -7,6 +7,7 @@ html, body{
     overflow: hidden;
     font-family: sans-serif;
 }
+/* grid container */
 .button-grid {
     width: 100vw;
     height: 100vh;
@@ -14,7 +15,7 @@ html, body{
 }
 
 /* all buttons */
-button{
+button {
     margin: 20px;
     border-radius: 10px;
     border: 2px outset;
@@ -29,12 +30,8 @@ button:active {
     border: 3px inset;
 }
 
-.id{
-    width: 250px;
-}
-
 /* numbers panel */
-.panel{
+.panel {
     display: block;
     width: 480px;
     height: 480px;
@@ -43,7 +40,7 @@ button:active {
 }
 
 /* letters panel */
-.lpanel{
+.lpanel {
     display: none;
     width: 480px;
     height: 480px;
@@ -58,7 +55,7 @@ button:active {
     height: 480px;
     float: left;
 }
-.button2{
+.button2 {
     margin-left: 0;
 }
 
@@ -69,12 +66,15 @@ button:active {
     height: 70px;
     text-align: center;
 }
-#header{
+#header {
     margin-top: 5px;
     margin-bottom: 0px;
     font-size: 20px;
 }
-#text-input{
+#text-input {
     font-weight: bolder;
     font-size: 15px;
+}
+.id {
+    width: 250px;
 }

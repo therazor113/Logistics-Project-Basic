@@ -5,37 +5,29 @@
         <link rel="stylesheet" href="./styles/confirm.css">
     </head>
 <body>
-
-    <section class="grid-sec">
+    <section class="container">
         <div class="title-div">
-            <h2 class="title">Login Confirmation:</h2>
+                <h2 class="title">Login Confirmation:</h2>
+                <h2 class="area-code">[NULL]</h2>
+                <h2 class="clock"></h2>
+        </div>
+        
+        <section class="welcome-div">
+            <div class="welcome-box">
+                <h1>Welcome <br> <br> Are you <span class="fullname">John Johnson ?</span></h1><br>
+            </div>
+
+            <div class="button-div">
+                <button class="yes" onclick="location.href='survey.html'">Yes</button>
+                <button class="no" onclick="location.href='login.html'">No</button>
+            </div>
         </div>
 
-        <div class="area-div">
-            <h2 class="area-code">[NULL]</h2>
-        </div>
-
-        <div class="clock-div">
-            <h2 class="clock"></h2>
+        <div class="checkbox-div">
+            <button class="checkbox"></button>
+            <h2 class="checkbox-text">Show Device Setup</h2>
         </div>
     </section>
-    
-    <section class="welcome-sec">
-        <div class="welcome-div">
-            <h1>Welcome</h1>
-            <h1>Are you John Johnson ?</h1>
-        </div>
-
-        <div class="button-div">
-            <button class="yes" onclick="location.href='survey.html'">Yes</button>
-            <button class="no" onclick="location.href='login.html'">No</button>
-        </div>
-    </section>
-
-    <div class="checkbox-div">
-        <button class="checkbox"></button>
-        <h2 class="checkbox-text">Show Device Setup</h2>
-    </div>
 
 </body>
 </html>

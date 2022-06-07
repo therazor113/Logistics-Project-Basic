@@ -1,9 +1,9 @@
 /* page */
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html, body{
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -15,7 +15,7 @@ html, body{
 }
 
 /* buttons */
-button{
+button {
     margin: 40px;
     background-color: green;
     border-radius: 10px;
@@ -29,36 +29,36 @@ button:active {
     border: 3px inset;
     background-color: green;
 }
-.insp-yes{
+.insp-yes {
     background-color: white;
 }
-.insp-no{
+.insp-no {
     background-color: white;
 }
 
 /* grid container */
-.container{
+.container {
     display: grid;
     margin: 10px;
-    width: 98%;
-    height: 98%;
+    width: 98vw;
+    height: 98vh;
     box-sizing: border-box;
     grid-template-columns: 1fr;
     grid-template-rows: [head] 3% [weight] 1fr [inspect] 1fr [info] 1fr;
 }
 
 /* flex header */
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     grid-row: head / head;
 }
-.clock-version{
+.clock-div {
     display: flex;
 }
 
 /* weight flex */
-.weight-container{
+.weight-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,7 +70,7 @@ button:active {
     display: flex;
     align-items: baseline;
 }
-.weight-buttons{
+.weight-buttons {
     display: flex;
 }
 .weight {
@@ -99,6 +99,7 @@ button:active {
     border-top: none;
 }
 .info-text {
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

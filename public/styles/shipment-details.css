@@ -1,9 +1,9 @@
 /* page */
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html, body{
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -14,8 +14,19 @@ html, body{
     color: white;
 }
 
+/* main grid container */
+.container {
+    display: grid;
+    margin: 10px;
+    width: 98vw;
+    height: 98vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3% 1fr;
+    box-sizing: border-box;
+}
+
 /* button styles */
-button{
+button {
     background-color: lightgray;
     border-radius: 10px;
     border: 2px outset;
@@ -35,17 +46,6 @@ button:not(.dimension):active {
     height: 70px;
     border-radius: 0;
     font-size: 60px;
-}
-
-/* main grid container */
-.container{
-    display: grid;
-    margin: 10px;
-    width: 98%;
-    height: 98%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3% 1fr;
-    box-sizing: border-box;
 }
 
 /* header flex */
@@ -92,7 +92,7 @@ button:not(.dimension):active {
 }
 
 /* HU weight capture grid box */
-.hu-buttons{
+.hu-buttons {
     display: grid;
     grid-row: 2 / 2;
     grid-template-rows: 40% 1fr;
@@ -116,7 +116,7 @@ button:not(.dimension):active {
     font-weight: lighter;
     font-size: 40px;
 }
-.keypad{
+.keypad {
     margin: 40px;
     border-radius: 8px;
     border: 2px outset black;

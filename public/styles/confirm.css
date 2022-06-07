@@ -1,4 +1,9 @@
-html, body{
+/* page defaults */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -9,55 +14,16 @@ html, body{
     color: white;
 }
 
-.grid-sec{
-    padding: 5px;
+/* grid container */
+.container {
+    display: grid;
     width: 100vw;
-    height: 35px;
-}
-.title-div{
-    margin: 0;
-    width: 200px;
-    float: left;
-}
-.title{
-    margin: 0;
-    font-size: 20px;
-    font-weight: bold;
-}
-.clock-div{
-    margin: 0;
-    width: 370px;
-    float: right;
-}
-.clock{
-    margin: 0;
-    padding: 2px;
-}
-.area-div{
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    left: 50%;
-    top: 0.5%;
-}
-.area-code{
-    margin: 0;
+    height: 100vh;
+    grid-template-rows: 3% 1fr 20%;
 }
 
-.welcome-sec{
-    position: fixed;
-  top: 35%;
-  left: 35%;
-  margin-top: -50px;
-  margin-left: -100px;
-  text-align: center;
-}
-.welcome-div{
-    text-align: center;
-    font-size: 35px;
-}
-
-button{
+/* buttons */
+button {
     margin: 40px;
     border-radius: 10px;
     border: 2px outset;
@@ -72,22 +38,50 @@ button:active {
     background-color: green;
 }
 
-.checkbox-div{
+/* title container */
+.title-div {
+    grid-row: 1 / 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+.clock {
+    padding-right: 20px;
+}
+
+/* welcome container */
+.welcome-div {
+    grid-row: 2 / 2;
+    align-self: center;
+    text-align: center;
+}
+.welcome-box {
+    font-size: 45px;
+}
+
+/* checkbox position */
+.checkbox-div {
     position: fixed;
-    top: 75%;
-    left: 54%;
+    top: 75vh;
+    left: 54vw;
     width: 400px;
     height: 80px;
     text-align: center;
 }
-.checkbox{
+
+/* checkbox */
+.checkbox {
     margin: 0;
     width: 70px;
     height: 70px;
     float: left;
     vertical-align: top;
 }
-.checkbox-text{
+.checkbox-text {
     margin-top: 18px;
     margin-left: 10px;
     font-size: 200%;

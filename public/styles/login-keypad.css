@@ -1,7 +1,9 @@
-/* page */
-html, body{
+/* page defaults */
+* {
     margin: 0;
     padding: 0;
+}
+html, body {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -9,17 +11,25 @@ html, body{
     background-color: rgb(25, 25, 200);
     color: white;
 }
-.button-grid {
-    position: fixed;
-  top: 35%;
-  left: 35%;
-  margin-top: -150px;
-  margin-left: -100px;
-  text-align: center;
+
+/* grid container */
+.container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    box-sizing: border-box;
+}
+
+/* button box */
+.button-div {
+    justify-self: center;
+    align-self: center;
 }
 
 /* all buttons */
-button{
+button {
     margin: 20px;
     border-radius: 10px;
     border: 2px outset;
@@ -35,12 +45,8 @@ button:active {
     background-color: green;
 }
 
-.id{
-    width: 250px;
-}
-
 /* numbers panel */
-.panel{
+.panel {
     display: block;
     width: 480px;
     height: 480px;
@@ -49,7 +55,7 @@ button:active {
 }
 
 /* letters panel */
-.lpanel{
+.lpanel {
     display: none;
     width: 480px;
     height: 480px;
@@ -64,24 +70,24 @@ button:active {
     height: 480px;
     float: left;
 }
-.button2{
+.button2 {
     margin-left: 0;
 }
 
 /* badge headers */
-.box {
+.badge-container {
     margin-left: 20px;
     width: 620px;
     height: 70px;
     text-align: center;
 }
-.badge-header{
+.badge-header {
     margin-top: 5px;
     margin-bottom: 0px;
     font-size: 26px;
     font-family: 'Tahoma', Arial;
 }
-.badge-text{
+.badge-text {
     margin: 5px;
     font-weight: 100;
     font-size: 20px;
@@ -89,8 +95,7 @@ button:active {
 }
 
 /* badge input */
-.badge-input{
-    margin: 0;
+.badge-input {
     background-color: transparent;
     border: 2px inset white;
     color: white;
@@ -98,4 +103,7 @@ button:active {
     border-radius: 2px;
     width: 250px;
     height: 20px;
+}
+.id {
+    width: 2500px;
 }
