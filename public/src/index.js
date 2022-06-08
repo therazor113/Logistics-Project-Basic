@@ -1,7 +1,7 @@
 export let enter, minus
 
 // Calling classes
-const input = document.querySelector('.id')
+const input = document.querySelector('.input-box')
 const message = document.querySelector('.message')
 const lPanel = document.querySelector('.lpanel')
 const Panel = document.querySelector('.panel')
@@ -21,8 +21,6 @@ document.querySelector('#enter').addEventListener('mousedown', enter = () => {
 
   // == send to access
   if (input.value == exid){
-    message.style.color = 'green'
-    message.textContent = 'Access Granted!'
     setTimeout(() => {location.href = "access.html"}, 750)
   }
 

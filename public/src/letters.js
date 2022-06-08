@@ -1,7 +1,7 @@
 import { enter, minus } from './index.js'
 
 // Misc variables
-const input = document.querySelector('.id')
+const input = document.querySelector('.input-box')
 let xValue
 let myTimer
 
