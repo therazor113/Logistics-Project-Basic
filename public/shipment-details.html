@@ -16,38 +16,71 @@
                 <h3 class="version">v0.0.P</h3>
             </div>
         </div>
-
-        <div class="info-container">
-                <div class="info-text">
-                <h2>SH: <span class="sh-info">N/A</span></h2>
-                <h2>CN: <span class="cn-info">N/A</span></h2>
-                <div class="ex-info">
-                    <h2>HU: <span class="hu-info">N/A</span></h2>
-                    <h2>Wgt: <span class="wgt-info">N/A</span></h2> 
-                    <h2>Dim: <span class="dim-info">N/A</span></h2>
-                </div>
-                <h2>Load Door(s): <span class="load-info">N/A</span></h2>
-                <h2>Drop#: <span class="drop-info">N/A</span></h2>
-            </div>
-            <div class="hu-buttons">
-                <div class="counter-container">
-                    <h2 class="counter">HU: <span class="counter-span">1</span></h2>
-                    <div>
-                        <button class="plus">+</button><br>
-                        <button class="minus">&minus;</button>
+        <section class="flex-container">
+            <section class="info-container">
+                    <div class="info-text">
+                    <h2>SH: <span class="sh-info">N/A</span></h2>
+                    <h2>CN: <span class="cn-info">N/A</span></h2>
+                    <div class="ex-info">
+                        <h2>HU: <span class="hu-info">N/A</span></h2>
+                        <h2>Wgt: <span class="wgt-info">N/A</span></h2> 
+                        <h2>Dim: <span class="dim-info">N/A</span></h2>
                     </div>
-                    <button class="keypad">&#x2328;</button>
+                    <h2>Load Door(s): <span class="load-info">N/A</span></h2>
+                    <h2>Drop#: <span class="drop-info">N/A</span></h2>
                 </div>
+                <section class="hu-buttons">
+                    <div class="counter-container">
+                        <h2 class="counter">HU: <span class="counter-span">1</span></h2>
+                        <div>
+                            <button class="plus">+</button><br>
+                            <button class="minus">&minus;</button>
+                        </div>
+                        <button class="keypad">&#x2328;</button>
+                    </div>
 
-                <div class="weight-container">
-                    <h2 class="live-weight">ERR2</h2>
-                    <button class="capture">Capture</button>
-                    <button class="complete">Complete</button>
-                    <button class="dimension">Dimension</button>
-                </div>
-            </div>
-        </div>
+                    <section class="weight-container">
+                        <h2 class="live-weight">ERR2</h2>
+                        <button class="capture">Capture</button>
+                        <button class="complete">Complete</button>
+                        <button class="dimension">Dimension</button>
+                    </section>
+                </section>
+            </section>
 
+            <section class="capture-container">
+                <section class="pro-container">
+                    <h2 class="pro-text">Pro: &emsp; &emsp; <span class="pro">NULL</span></h2>
+                    <div class="pro-buttons">
+                        <button class="manual-pro">Manual Pro</button>
+                        <button class="previous-pro">Previous Pro</button>
+                    </div>
+                </section>
+
+                <section class="hu-capture-container">
+                    <div class="hu-list">
+                        <p class="hu-list-text">
+                            <span class="capture-number">1</span>
+                            <span class="capture-weight">1000</span><br>
+                        </p>
+                    </div>
+                    <section class="capture-buttons">
+                            <button class="tab-up">&#129145;</button>
+                            <button class="abort">Abort All</button>
+                                <button class="tab-down">&#129147;</button>
+                                <button class="delete">Delete <br> Selected</button>
+                    </section>
+                    <section class="total-text">
+                        <h2>Total: <span class="total">1</span>&emsp;<span class="total">Null</span></h2>
+                    </section>
+                </section>
+                <section class="ex-buttons">
+                    <button class="zero-scale">Zero Scale</button>
+                    <button class="dms">DMS</button>
+                    <button class="logout" onclick="location.href='login.html'">Logout</button>
+                </section>
+            </section>
+        </section>
     </section>
 </body>
 </html>

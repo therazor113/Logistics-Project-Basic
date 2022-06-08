@@ -20,9 +20,13 @@ html, body {
     margin: 10px;
     width: 98vw;
     height: 98vh;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 3% 1fr;
     box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* button styles */
@@ -39,6 +43,16 @@ button:not(.dimension):active {
     border: 3px inset;
     background-color: green;
 }
+.keypad {
+    margin: 40px;
+    border-radius: 8px;
+    border: 2px outset black;
+    background-color: green;
+    font-size: 300%;
+    line-height: 10px;
+    width: 90px;
+    height: 90px;
+}
 .plus, .minus {
     margin-top: 10px;
     background-color: orange;
@@ -47,11 +61,20 @@ button:not(.dimension):active {
     border-radius: 0;
     font-size: 60px;
 }
+.tab-up, .tab-down {
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: orange;
+    width: 100px;
+    height: 90px;
+    font-size: 70px;
+    line-height: 10px;
+}
 
 /* header flex */
 .header {
     display: flex;
-    grid-column: 1 / 3;
+    grid-row: 1 / 1;
     justify-content: space-between;
 }
 .version-clock {
@@ -65,14 +88,13 @@ button:not(.dimension):active {
 /* info column */
 .info-container {
     display: grid;
-    grid-template-rows: 30% 70%;
-    border: 2px solid black;
+    grid-template-columns: minmax(600px, 600px);
 }
 /* info text */
 .info-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    margin-top: 20px;
+    display: grid;
+    row-gap: 20px;
 }
 .info-text h2 {
     font-size: 35px;
@@ -99,8 +121,6 @@ button:not(.dimension):active {
     border: 1px solid white;
     border-radius: 10px;
     align-self: flex-end;
-    width: 650px;
-    height: 490px;
 }
 .counter-container {
     margin: 10px;
@@ -116,16 +136,8 @@ button:not(.dimension):active {
     font-weight: lighter;
     font-size: 40px;
 }
-.keypad {
-    margin: 40px;
-    border-radius: 8px;
-    border: 2px outset black;
-    background-color: green;
-    font-size: 300%;
-    line-height: 10px;
-    width: 90px;
-    height: 90px;
-}
+
+/* live weight container */
 .weight-container {
     margin: 10px;
     display: grid;
@@ -145,10 +157,112 @@ button:not(.dimension):active {
     grid-column: 2 / 2;
     grid-row: 1 / 1;
 }
-.dimension {
-    color: gray;
+.dimension, .complete{
     grid-row: 2 / 2;
 }
-.complete {
+
+/* pro capture column */
+.capture-container {
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: minmax(550px, 550px);
+    grid-template-rows: 25% 1fr;
+    grid-column: 2 / 2;
+}
+.pro-container {
+    margin-top: 10px;
+    display: grid;
+    border: 1px solid white;
+    border-radius: 10px;
+    grid-template-rows: 1fr 1fr;
+}
+.pro-container button {
+    font-size: 28px;
+}
+
+/* pro text */
+.pro-text {
+    font-size: 30px;
+    padding-left: 10px;
+    align-self: center;
+}
+.pro {
+    font-size: 45px;
+}
+
+/* pro buttons */
+.pro-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* hu capture container */
+.hu-capture-container {
+    margin-top: 10px;
+    display: grid;
+    border: 1px solid white;
+    border-radius: 10px;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 1fr 10%;
+}
+
+/* capture buttons */
+.capture-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    grid-column: 2 / 2;
+    gap: 10vh 10px;
+    align-content: center;
+    align-items: center;
+}
+.abort, .delete {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+/* capture list */
+.hu-list {
+    justify-self: center;
+    margin-top: 8vh;
+    grid-column: 1 / 1;
+}
+.hu-list p {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    background-color: yellow;
+}
+
+/* total */
+.total-text {
+    margin-left: 20px;
     grid-row: 2 / 2;
+    grid-column: 1 / 3;
+    font-size: 30px;
+    align-self: center;
+}
+
+/* extra buttons */
+.ex-buttons {
+    display: flex;
+    gap: 10px;
+    justify-self: center;
+}
+.zero-scale {
+    background-color: green;
+    width: 180px;
+}
+.dms {
+    width: 160px;
+    font-size: 28px;
+}
+.logout {
+    background-color: green;
+    width: 170px;
 }

@@ -10,7 +10,7 @@ window.onload = () => {setInterval(() => {
 // add HU count
 const counter = document.querySelector('.counter-span')
 document.querySelector('.plus').addEventListener('mousedown', () => {
-  if (counter.textContent < 1000) {
+  if (counter.textContent < 999) {
     counter.textContent = parseInt(counter.textContent) + 1
   }
 })
