@@ -14,8 +14,8 @@ html, body {
     margin: 10px;
     display: grid;
     grid-template-rows: 4vh 1fr 1fr;
-    width: 100vw;
-    height: 100vh;
+    width: 98vw;
+    height: 98vh;
     box-sizing: border-box;
 }
 
@@ -38,13 +38,34 @@ html, body {
 .bill-list-container {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-row: 2 / 2;
-    border: 1px solid black;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2vw 1fr;
+    row-gap: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.bill-titles {
+    display: grid;
+    grid-template-columns: 12vw 18vw 18vw 9vw 10vw 7vw 6vw 1fr;
+    justify-items: start;
+    align-self: start;
+    grid-column: 1 / 8;
+    grid-row: 1 / 1;
+    border: 2px solid black;
 }
 .bill-list-container button {
     font-weight: bold;
     padding: 3px;
+}
+
+/* list info style */
+.pro-number {
+    font-size: 18px;
+    text-align: center;
+}
+.customer-name, .shipper-name {
+    font-weight: bolder;
 }
 
 /* manifest buttons */
@@ -65,4 +86,21 @@ html, body {
 }
 .manifest-buttons button:active {
     border: 2px inset white;
+}
+
+/* bill table */
+.no-bill {
+    font-size: 40px;
+    font-weight: bolder;
+    justify-self: center;
+    align-self: center;
+}
+td {
+    border: 2px solid black;
+}
+.bill-row {
+    display: grid;
+    justify-items: stretch;
+    grid-template-columns: 12vw 18vw 18vw 9vw 10vw 7vw 6vw 1fr;
+    grid-template-rows: 1fr;
 }
