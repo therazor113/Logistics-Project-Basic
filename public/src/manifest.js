@@ -23,27 +23,26 @@ let createBill = `
   <td><p>${billData[4][0]}<br>${billData[4][1]}</p></td>
   <td><p>${billData[5][0]}</p></td>
   <td class="flag"><p>${billData[6][0]}<br></p></td>
-  <td><p>Door: ${billData[7][0]}<br>${billData[7][1]}</p></td>`
+  <td><p>Door: ${billData[7][0]}<br>${billData[7][1]}</p></td>`;
 
-let data = false
+// temp add data row - for testing
+let data = true
 let table = document.createElement("table")
 table.className = 'bill-table'
 let tableBody = document.createElement("tbody")
 tableBody.className = 'table-body'
 
-// temp add data row - for testing
 document.querySelector('.test').addEventListener('mousedown', () => {
   switch(data) {
-    case false:
+    case true:
       noRecords.style.display = 'none'
       tableSection.appendChild(table)
       table.appendChild(tableBody)
-      data = true
-    case true: {
+      data = false
+    default:
       let newRow = table.insertRow()
       newRow.className = 'bill-row'
       tableBody.appendChild(newRow).innerHTML = createBill
       break
-    }
   }
 })
