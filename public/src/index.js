@@ -18,18 +18,7 @@ key.forEach(el => el.addEventListener('mousedown', () => {
 
 // Checking input is equal to an id#
 document.querySelector('#enter').addEventListener('mousedown', enter = () => {
-
-  // == send to access
-  if (input.value == exid){
-    setTimeout(() => {location.href = "access.html"}, 750)
-  }
-
-  // != "Please enter id #"
-  else {
-    message.style.color = 'red'
-    message.textContent = 'Please enter id #'
-    setTimeout(() => {message.textContent = ''}, 1000)
-  }
+  setTimeout(() => {location.href = ""}, 750)
 })
 
 // Toggle keypad type

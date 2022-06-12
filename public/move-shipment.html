@@ -16,55 +16,68 @@
                 </div>
 
                 <div class="header-buttons">
-                    <button class="logoff">LOG OFF</button>
-                    <button class="manifest">UNLOAD MANIFEST</button>
+                    <button class="logoff" onclick="location.href='login.html'">LOG OFF</button>
+                    <button class="manifest" onclick="location.href='manifest.html'">UNLOAD MANIFEST</button>
                 </div>
             </section>
 
-            <section class="info-container">
-                <div class="pro-container">
-                    <h2>PRO #: <span class="pro-area">NULL</span>&nbsp;</h2>
-                    <button class="pro-button">I000000000</button>
-                    <h2 class="due-date">&nbsp;(Due:NULL)</h2>
-                    <h2>
-                </div>
+            <section class="flex-container">
+                <section class="info-container">
+                    <div class="pro-container">
+                        <h2>PRO #: <span class="pro-area">____</span>&nbsp;</h2>
+                        <button class="pro-button"></button>
+                        <h2 class="due-date">&nbsp;<span class="due"></span></h2>
+                        <h2>
+                    </div>
 
-                <div class="shipper-container">
-                    <h2 class="info-headers">SHIPPER&nbsp;</h2>
-                    <p class="shipper-info"></p>
-                </div>
+                    <div class="shipper-container">
+                        <h2 class="info-headers">SHIPPER&nbsp;</h2>
+                        <p class="shipper-info"></p>
+                    </div>
 
-                <div class="customer-container">
-                    <h2 class="info-headers">CUSTOMER&nbsp;</h2>
-                    <p class="customer-info"></p>
-                </div>
+                    <div class="customer-container">
+                        <h2 class="info-headers">CUSTOMER&nbsp;</h2>
+                        <p class="customer-info"></p>
+                    </div>
 
-                <div class="hu-info">
-                    <p>
-                        HU: <span class="hu-count">1</span>, WEIGHT: 
-                        <span class="hu-weight">NULL</span>, PIECES: 
-                        <span class="hu-pieces">1</span><br>
-                        <span class="hu-loc">NULL: NULL</span> /DISPATCH TO: 
-                        <span class="hu-dispatch">N/A</span><br> FINAL DEST:
-                        <span class="hu-dest">N/A</span>
-                    </p>
-                </div>
+                    <div class="hu-info">
+                        <p>
+                            HU: <span class="hu-count"></span>, WEIGHT: 
+                            <span class="hu-weight"></span>, PIECES: 
+                            <span class="hu-pieces"></span><br> LOAD DOOR(S):
+                            <span class="hu-loc"></span> /DISPATCH TO: 
+                            <span class="hu-dispatch"></span><br> FINAL DEST:
+                            <span class="hu-dest"></span>
+                        </p>
+                    </div>
+                </section>
+            
+
+                <section class="button-container">
+                    <div class="tags-container">
+                        <p>&#x2622;</p>
+                        <p>&#10052;</p>
+                        <p>&#128197;</p>
+                        <p>&#33;</p>
+                    </div>
+
+                    <div class="hu-button-container">
+                        <button class="load">LOAD IT</button>
+                        <button class="dock">DOCK IT</button>
+                        <button class="write">WRITE ON</button>
+                    </div>
+                    <div class="nav-button-container">
+                        <button class="live">LIVE GREEN SHEET</button>
+                        <button class="pro-entry" onclick="location.href='keypad.html'">MANUAL PRO ENTRY</button>
+                        <button class="reweigh" onclick="location.href='shipment-details.html'">REWEIGH</button>
+                        <button class="empty">Testing</button>
+                    </div>
+                </section>
             </section>
-
-            <section class="button-container">
-                <div class="hu-button-container">
-                    <button class="load">LOAD IT</button>
-                    <button class="dock">DOCK IT</button>
-                    <button class="write">WRITE ON</button>
-                </div>
-                <div class="nav-button-container">
-                    <button class="live">LIVE GREEN SHEET</button>
-                    <button class="pro-entry">MANUAL PRO ENTRY</button>
-                    <button class="reweigh">REWEIGH</button>
-                    <button class="empty"></button>
-                </div>
-            </section>
-
+            <div class="prompt">
+                <h2 class="prompt-message">WRITE ON</h2>
+                <button class="prompt-ok">OK</button>
+            </div>
         </section>
     </body>
 </html>

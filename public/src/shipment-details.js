@@ -1,4 +1,7 @@
 
+// Query classes
+const promptWindow = document.querySelector('.prompt')
+
 // live clock
 const clock = document.querySelector('.clock')
 window.onload = () => {setInterval(() => {
@@ -20,4 +23,14 @@ document.querySelector('.minus').addEventListener('mousedown', () => {
   if (counter.textContent > 1) {
     counter.textContent = parseInt(counter.textContent) - 1
   }
+})
+
+// DMS function
+document.querySelector('.dms').addEventListener('mousedown', () => {
+  promptWindow.style.display = 'grid'
+})
+// Prompt ok
+document.querySelector('.prompt-ok').addEventListener('mousedown', () => {
+  promptWindow.style.display = 'none'
+  location.href = 'move-shipment.html'
 })

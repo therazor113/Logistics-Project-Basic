@@ -265,3 +265,37 @@ button:active {
     background-color: green;
     width: 170px;
 }
+
+/* Prompt */
+.prompt {
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: absolute;
+    top: 40vh;
+    border: 2px solid white;
+    background-color: black;
+    width: 98vw;
+    height: 250px;
+}
+.prompt-message {
+    margin: 20px;
+    grid-row: 1 / 1;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.prompt-ok {
+    margin: 20px;
+    grid-row: 2 / 3;
+    font-size: 28px;
+    font-weight: bold;
+    width: 100px;
+    height: 60px;
+    justify-self: center;
+    align-self: flex-end;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
