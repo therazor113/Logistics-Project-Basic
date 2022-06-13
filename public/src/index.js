@@ -2,12 +2,10 @@ export let enter, minus
 
 // Calling classes
 const input = document.querySelector('.input-box')
-const message = document.querySelector('.message')
 const lPanel = document.querySelector('.lpanel')
 const Panel = document.querySelector('.panel')
 
-// Example id
-let exid = 1234
+// Misc variables
 let tKeys
 
 // calling keys

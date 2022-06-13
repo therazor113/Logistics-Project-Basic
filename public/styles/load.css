@@ -1,0 +1,74 @@
+/* page defaults */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+/* grid container */
+.button-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* all buttons */
+button {
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px outset;
+    background-color: green;
+    font-size: 120%;
+    width: 100px;
+    height: 80px;
+    font-weight: bold;
+}
+button:active {
+    border: 2px inset;
+}
+
+/* numbers panel */
+.panel {
+    display: block;
+    width: 480px;
+    height: 480px;
+    text-align: center;
+    float: left;
+}
+
+/* left side buttons */
+.function-buttons {
+    display: grid;
+}
+.button2 {
+    margin-left: 0;
+}
+#tkeypad {
+    color: grey;
+}
+
+/* input box */
+.input-container {
+    text-align: center;
+}
+#header {
+    margin: 5px;
+    font-size: 25px;
+}
+#text-input {
+    font-weight: bolder;
+    font-size: 20px;
+}
+.input-box {
+    width: 250px;
+    height: 20px;
+    font-size: 20px;
+}
