@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="module" src="./src/weight-check.js"></script>
+        <link rel="stylesheet" href="./styles/weight-check.css">
+    </head>
+    <body>
+        <section class="container">
+                <section class="header">
+                    <h2>Zero Scale Warning:</h2>
+                    <h2>[<span class="area-code">NULL</span>]</h2>
+                    <h2 class="clock"></h2>
+                </section>
+            <section class="child-container">
+                <section class="reweigh-text">
+                    <p>Please zero the scale!!<br>
+                    <br>Ensure forklift blades are off the ground, level and empty before zeroing scale</p>
+                </section>
+
+                <section class="reweigh-table">
+                    <div class="cell1"><h2>Number of pros reweighed<br>since last zeroing of scale</h2></div>
+                    <div class="cell2"><span class="amount-reweigh">20</span></div>
+                    <div class="cell3"><h2>Weight</h2></div>
+                    <div class="cell4"><span class="live-weight">0</span></div>
+                </section>
+
+                <section class="button-container">
+                    <button class="zero">Zero Scale</button>
+                    <button class="no-scale">Scale NOT Working</button>
+                    <button class="done" onclick="history.back()">Done</button>
+                </section>
+            </section>
+        </section>
+    </body>
+</html>
