@@ -100,12 +100,13 @@ td {
 /* manifest buttons */
 .manifest-buttons {
     display: flex;
+    justify-content: space-between;
     grid-row: 3 / 3;
 }
 .manifest-buttons button {
     margin-top: 10px;
-    margin-right: 10px;
-    width: 100px;
+    margin-right: 20px;
+    width: 120px;
     height: 60px;
     font-size: 20px;
     font-weight: bolder;
@@ -114,10 +115,14 @@ td {
     border-radius: 0;
     border: 2px outset white;
 }
+.page-buttons {
+    margin-right: 300px;
+}
 .manifest-buttons button:active {
     border: 2px inset white;
 }
 
+/* testing */
 .test {
     width: 100px;
     height: 60px;

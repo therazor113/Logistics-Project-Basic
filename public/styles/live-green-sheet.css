@@ -1,3 +1,4 @@
+/* Page defaults */
 * {
     margin: 0;
     padding: 0;
@@ -8,21 +9,146 @@ html, body {
     overflow: hidden;
 }
 
+/* Main container */
 .container {
     display: grid;
+    margin: 10px;
+    width: 98vw;
+    height: 98vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 2vh 5vh minmax(37px, 0fr);
 }
 
-.header-container {
-    display: grid;
+/* Main title */
+.title {
+    font-size: 30px;
 }
+
+/* Search container */
+.search-container {
+    margin-top: 20px;
+    grid-row: 2 / 2;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+.search-container button:active {
+    background-color: rgb(19, 170, 19);
+}
+
+/* Destination container */
 .dest-container {
     display: flex;
+    align-items: center;
+    gap: 2px;
 }
+.dest-input {
+    width: 100px;
+    height: 20px;
+}
+.dest-button {
+    font-size: 45px;
+    border-radius: 10px;
+    width: 80px;
+    height: 55px;
+    background-color: green;
+}
+
+/* Door container */
 .door-container {
     display: flex;
+    align-items: center;
+    gap: 2px;
 }
+.door-input {
+    width: 100px;
+    height: 20px;
+}
+.door-button {
+    font-size: 45px;
+    border-radius: 10px;
+    width: 80px;
+    height: 55px;
+    background-color: green;
+}
+
+/* Freight container */
 .freight-container {
     display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.freight-button {
+    border-radius: 10px;
+    width: 100px;
+    height: 60px;
+    color: white;
+    background-color: green;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* Search button */
+.search {
+    border-radius: 10px;
+    width: 100px;
+    height: 60px;
+    color: white;
+    background-color: green;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: 125px;
+}
+
+/* table list */
+.table-section {
+    display: none;
+}
+.bill-list-container {
+    margin-top: 10px;
+    display: grid;
+    grid-row: 3 / 3;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2vw 1fr;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.bill-titles {
+    display: grid;
+    grid-template-columns: 17vw 14vw 11vw 11vw 12vw 12vw 11vw 1fr;
+    justify-items: start;
+    align-self: start;
+    grid-row: 1 / 1;
+}
+.bill-list-container button {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* manifest buttons */
+.manifest-buttons {
+    display: flex;
+    justify-content: space-between;
+    grid-row: 4 / 4;
+}
+.page-buttons {
+    margin-right: 300px;
+}
+.manifest-buttons button {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 120px;
+    height: 48px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    background-color: green;
+    border-radius: 0;
+    border: 2px outset white;
+}
+.manifest-buttons button:active {
+    border: 2px inset white;
 }

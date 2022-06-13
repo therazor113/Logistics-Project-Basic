@@ -6,28 +6,56 @@
     </head>
     <body>
         <section class="container">
-            <section class="header-container">
-                <h2>LIVE GREEN SHEET</h2>
-                <section class="search-continer">
-                    <div class="dest-container">
-                        <h1>Dest:</h1>
-                        <input type="input">
-                        <button class="dest-button">&#x2328;</button>
-                    </div>
+            <h2 class="title">LIVE GREEN SHEET</h2>
+            <section class="search-container">
+                <div class="dest-container">
+                    <h1>Dest:</h1>
+                    <input type="input" class="dest-input">
+                    <button class="dest-button">&#x2328;</button>
+                </div>
 
-                    <div class="door-container">
-                        <h1>Door:</h1>
-                        <input type="input">
-                        <button class="dest-button">&#x2328;</button>
-                    </div>
-                    <div class="freight-container">
-                        <h1>Freight:</h1>
-                        <button class="sort">ALL</button>
-                    </div>
-                    <button class="search">Search</button>
+                <div class="door-container">
+                    <h1>Door:</h1>
+                    <input type="input" class="door-input">
+                    <button class="door-button">&#x2328;</button>
+                </div>
+
+                <div class="freight-container">
+                    <h1>Freight:</h1>
+                    <button class="freight-button">ALL</button>
+                 </div>
+
+                <button class="search">Search</button>
+            </section>
+
+            <section class="list-container">
+                <section class="list-buttons">
+
                 </section>
             </section>
 
+            <section class="bill-list-container">
+                <div class="bill-titles">
+                    <button>PRO #</button>
+                    <button>LOCATION</button>
+                    <button>PIECES</button>
+                    <button>WEIGHT</button>
+                    <button>DEST</button>
+                    <button>DELV</button>
+                    <button>SRV</button>
+                    <button>FLAGS</button>
+                </div>
+                <section class="table-section">
+                </section>
+            </section>
+
+            <section class="manifest-buttons">
+                <button class="cancel" onclick="location.href='move-shipment.html'">Cancel</button>
+                <div class="page-buttons">
+                    <button class="prev">Prev</button>
+                    <button class="next">Next</button>
+                </div>
+            </section>
         </section>
     </body>
 </html>
