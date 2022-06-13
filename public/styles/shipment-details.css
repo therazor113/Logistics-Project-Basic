@@ -1,4 +1,4 @@
-/* page defaults */
+/* Page defaults */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ html, body {
     color: white;
 }
 
-/* main grid container */
+/* Main grid container */
 .container {
     display: grid;
     margin: 10px;
@@ -26,7 +26,7 @@ html, body {
     justify-content: space-between;
 }
 
-/* button styles */
+/* Button styles */
 button {
     background-color: lightgray;
     border-radius: 10px;
@@ -67,7 +67,7 @@ button:active {
     line-height: 10px;
 }
 
-/* header flex */
+/* Header flex */
 .header {
     display: flex;
     grid-row: 1 / 1;
@@ -84,12 +84,12 @@ button:active {
     margin-right: 20px;
 }
 
-/* info column */
+/* Info column */
 .info-container {
     display: grid;
     grid-template-columns: minmax(600px, 600px);
 }
-/* info text */
+/* Info text */
 .info-text {
     margin-top: 30px;
     display: grid;
@@ -136,7 +136,7 @@ button:active {
     font-size: 40px;
 }
 
-/* live weight container */
+/* Live weight container */
 .weight-container {
     margin: 10px;
     display: grid;
@@ -160,7 +160,7 @@ button:active {
     grid-row: 2 / 2;
 }
 
-/* pro capture column */
+/* Pro capture column */
 .capture-container {
     margin-left: 10px;
     display: grid;
@@ -179,7 +179,7 @@ button:active {
     font-size: 28px;
 }
 
-/* pro text */
+/* Pro text */
 .pro-text {
     font-size: 30px;
     padding-left: 10px;
@@ -189,7 +189,7 @@ button:active {
     font-size: 45px;
 }
 
-/* pro buttons */
+/* Pro buttons */
 .pro-buttons {
     margin-bottom: 20px;
     display: flex;
@@ -197,7 +197,7 @@ button:active {
     gap: 40px;
 }
 
-/* hu capture container */
+/* HU capture container */
 .hu-capture-container {
     margin-top: 10px;
     display: grid;
@@ -207,7 +207,7 @@ button:active {
     grid-template-rows: 1fr 10%;
 }
 
-/* capture buttons */
+/* Capture buttons */
 .capture-buttons {
     display: flex;
     flex-flow: row wrap;
@@ -221,7 +221,7 @@ button:active {
     font-size: 25px;
 }
 
-/* capture list */
+/* Capture list */
 .hu-list {
     justify-self: center;
     margin-top: 8vh;
@@ -238,7 +238,7 @@ button:active {
     background-color: yellow;
 }
 
-/* total */
+/* Total */
 .total-text {
     margin-left: 20px;
     grid-row: 2 / 2;
@@ -247,7 +247,7 @@ button:active {
     align-self: center;
 }
 
-/* extra buttons */
+/* Extra buttons */
 .ex-buttons {
     display: flex;
     gap: 10px;

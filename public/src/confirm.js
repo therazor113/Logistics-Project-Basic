@@ -8,10 +8,22 @@ window.onload = () => {setInterval(() => {
 )}
 
 // checkbox
-let check = null
+let check = false
 const checkbox = document.querySelector('.checkbox')
 checkbox.addEventListener('mousedown', () => {
-  check = check === false ? true : false
-  checkbox.textContent = check === true ? '' : 'X'
-  checkbox.style.backgroundColor = check === true ? 'skyblue' : 'orange'
+  check = check === true ? false : true
+  checkbox.textContent = check === false ? '' : 'X'
+  checkbox.style.backgroundColor = check === false ? 'skyblue' : 'orange'
+})
+
+// device setup route
+document.querySelector('.yes').addEventListener('mousedown', () => {
+  switch(check){
+   case false:
+    location.href='survey.html'
+    break
+  case true: 
+    location.href='device-setup.html'
+    break
+  }
 })

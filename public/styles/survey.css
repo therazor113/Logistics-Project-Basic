@@ -1,4 +1,4 @@
-/* page */
+/* Page defaults*/
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ html, body {
     color: white;
 }
 
-/* buttons */
+/* Buttons */
 button {
     margin: 40px;
     background-color: green;
@@ -36,7 +36,7 @@ button:active {
     background-color: white;
 }
 
-/* grid container */
+/* Grid container */
 .container {
     display: grid;
     margin: 10px;
@@ -47,7 +47,7 @@ button:active {
     grid-template-rows: [head] 3% [weight] 1fr [inspect] 1fr [info] 1fr;
 }
 
-/* flex header */
+/* Flex header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -57,7 +57,7 @@ button:active {
     display: flex;
 }
 
-/* weight flex */
+/* Weight flex */
 .weight-container {
     margin-top: 10px;
     display: flex;
@@ -78,7 +78,7 @@ button:active {
     font-size: 40px;
 }
 
-/* inspection flex */
+/* Inspection flex */
 .inspection-container {
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@ button:active {
     width: 300px;
 }
 
-/* info flex */
+/* Info flex */
 .info-container {
     display: flex;
     align-items: center;
