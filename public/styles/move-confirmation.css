@@ -1,0 +1,117 @@
+/* page defaults */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Main container */
+.container {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8vh 1fr 20vh;
+    width: 98vw;
+    height: 98vh;
+}
+.child-container {
+    display: flex;
+    justify-content: space-between;
+    grid-row: 2 / 2;
+}
+
+/* Header container */
+.header {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+/* info container */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.freight-info {
+    font-size: 20px;
+    color: darkgreen;
+}
+.live-statistics {
+    font-size: 20px;
+}
+.live-title {
+    font-size: 40px;
+}
+.loaded-trailer {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Freight exceptions container */
+.freight-exceptions {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: red;
+}
+.freight-exceptions button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: auto;
+    font-size: 40px;
+    width: 425px;
+    height: 90px;
+}
+
+/* continue container */
+.continue-container {
+    display: grid;
+    grid-row: 3 / 3;
+}
+.assignment-done {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+.assignment-text {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: yellow;
+    margin-right: 20px;
+}
+
+.get-assignment {
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    width: 400px;
+    height: 85px;
+    border: 1px outset gray;
+    background-color: green;
+}
+.continue-ok {
+    display: none;
+    text-align: center;
+}
+.ok-button {
+    margin: 20px;
+    font-size: 25px;
+    border: 1px outset gray;
+    font-weight: bold;
+    background-color: green;
+    width: 110px;
+    height: 80px;
+}
+.continue-container button:active {
+    border: 1px inset gray;
+}

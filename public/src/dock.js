@@ -7,7 +7,7 @@ document.querySelector('#minus').addEventListener('mousedown', () => {
 
 // Checking input is equal to an id#
 document.querySelector('#enter').addEventListener('mousedown', () => {
-  setTimeout(() => {location.href = ""}, 750)
+  location.href='move-confirmation.html'
 })
 
 // calling keys

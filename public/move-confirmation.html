@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="module" src="./src/move-confirmation.js"></script>
+        <link rel="stylesheet" href="./styles/move-confirmation.css">
+    </head>
+<body>
+    <section class="container">
+        <section class="header">
+            <h2>Move Confirmation:</h2>
+            <h2>[<span class="area-code">NULL</span>]</h2>
+            <h2 class="clock"></h2>
+        </section>
+
+        <section class="child-container">
+            <section class="info-container">
+                <div class="freight-info">
+                    <h2>PRO: NULL<br>NOW LOADED IN DOOR NULL ON<br>TRAILER NULL</h2>
+                    <br>
+                </div>
+                <h1 class="live-title"><u>LIVE STATISTICS</u></h1>
+                <div class="live-statistics">
+                    <h2>DOCKED CREDITS: 0</h2>
+                    <h2>LOADED CREDITS: 0</h2>
+                    <h2>SCANNED CREDITS: 0</h2>
+                </div>
+                <div class="loaded-trailer">
+                    <p>NULL - Bill Count: NULL Total Weight: NULL<br>Total Pieces: NULL</p>
+                </div>
+            </section>
+            <section class="freight-exceptions">
+                <h2><u>FREIGHT EXCEPTIONS</u></h2>
+                <button class="over">OVER</button>
+                <button class="short">SHORT</button>
+                <button class="damage">DAMAGE</button>
+            </section>
+        </section>
+
+        <section class="continue-container">
+            <div class="assignment-done">
+                <div><p class="assignment-text">&emsp;Your current assignment appears to be&emsp;<br>complete.</p></div>
+                <button class="get-assignment" onclick="location.href='manifest.html'">Get My Assignment</button>
+            </div>
+            <div class="continue-ok">
+                <button class="ok-button">OK</button>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
