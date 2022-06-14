@@ -45,11 +45,11 @@ lkey.forEach(el => el.addEventListener('mousedown', () => {
       break
       // B -> C
       case el.textContent.charAt(1):
-          input.value = input.value.slice(0, -1)
-          xValue = el.textContent.charAt(2)
-          input.value += xValue
+        input.value = input.value.slice(0, -1)
+        xValue = el.textContent.charAt(2)
+        input.value += xValue
       break
-      // C -> A || C -> !!D 
+      // C -> A || C -> D 
       case el.textContent.charAt(2):
         if (el.textContent.length == 4) {
           input.value = input.value.slice(0, -1)

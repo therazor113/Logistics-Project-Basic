@@ -11,3 +11,119 @@ html, body {
     background-color: rgb(25, 25, 200);
     color: white;
 }
+
+/* Font edits */
+h2 {
+    font-size: 35px;
+}
+p {
+    font-size: 35px;
+}
+
+/* Main container */
+.container {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5vh 1fr 10vh;
+    width: 98vw;
+    height: 98vh;
+}
+
+/* Button styles */
+.keypad {
+    border-radius: 8px;
+    border: 2px outset black;
+    background-color: green;
+    font-size: 300%;
+    line-height: 10px;
+    width: 90px;
+    height: 90px;
+}
+#placeholder {
+    visibility: hidden;
+}
+
+/* Header title */
+.header {
+    grid-row: 1 / 1;
+}
+
+/* Setting container */
+.settings-container {
+    grid-row: 2 / 2;
+    display: grid;
+    grid-template-columns: 1fr 20vw;
+    grid-template-rows: 1fr;
+}
+
+/* Settings table */
+.settings-table {
+    grid-row: 1 / 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 10vh;
+}
+.settings-titles {
+    grid-column: 1 / 1;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.settings-inputs {
+    grid-column: 2 / 2;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.settings-keypads {
+    grid-column: 3 / 3;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Selection container */
+.type-network-container {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.type-network-container button {
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: green;
+    border: 2px outset white;
+    font-size: 30px;
+}
+/* temp */
+.type-network-container button:active {
+    background-color: orange;
+}
+
+.functions-container {
+    grid-row: 3 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.functions-container button {
+    width: 200px;
+    height: 75px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}

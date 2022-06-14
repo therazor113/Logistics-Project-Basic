@@ -6,7 +6,51 @@
     </head>
     <body>
         <section class="container">
-            <h2>Welcome!</h2>
+            <section class="header">
+                <h2>Device Info:</h2>
+            </section>
+                <section class="settings-container">
+                    <section class="settings-table">
+                        <div class="settings-titles">
+                            <h2>Terminal Code:</h2>
+                            <h2>Forklift ID:</h2>
+                            <h2>Scale Indicator ID:</h2>
+                            <br>
+                            <h2>Device ID:</h2>
+                        </div>
+                        <div class="settings-inputs">
+                            <p>NULL</p>
+                            <p>NULL</p>
+                            <p>NULL</p>
+                            <br>
+                            <p>NULL</p>
+                        </div>
+                        <div class="settings-keypads">
+                            <button class="keypad" id="edit-terminal">&#x2328;</button>
+                            <button class="keypad" id="edit-forklift">&#x2328;</button>
+                            <button class="keypad" id="edit-scale">&#x2328;</button>
+                            <br>
+                            <button class="keypad" id="placeholder">&#x2328;</button>
+                        </div>
+                    </section>
+                    <section class="type-network-container">
+                        <h2>Type</h2>
+                        <button class="reweigh">Reweigh</button>
+                        <button class="dms">DMS</button>
+                        <button class="both">Both</button>
+                        <h2>Network</h2>
+                        <button class="reweigh">WIFI</button>
+                        <button class="dms">Cellular</button>
+                        <button class="both">Auto</button>
+                    </section>
+                </section>
+
+            <section class="functions-container">
+                <button class="edit">Edit</button>
+                <button class="submit">Submit</button>
+                <button class="cancel" onclick="location.href='survey.html'">Cancel</button>
+            </section>
+
         </section>
     </body>
 </html>

@@ -18,12 +18,5 @@ checkbox.addEventListener('mousedown', () => {
 
 // device setup route
 document.querySelector('.yes').addEventListener('mousedown', () => {
-  switch(check){
-   case false:
-    location.href='survey.html'
-    break
-  case true: 
-    location.href='device-setup.html'
-    break
-  }
+  location.href = check === false ? 'survey.html' : 'device-setup.html'
 })
