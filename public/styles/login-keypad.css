@@ -1,4 +1,4 @@
-/* page defaults */
+/* Page defaults */
 * {
     margin: 0;
     padding: 0;
@@ -12,92 +12,79 @@ html, body {
     color: white;
 }
 
-/* grid container */
-.container {
+/* Grid container */
+.button-grid {
+    margin: 10px;
     display: grid;
-    width: 100vw;
-    height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 20vh 1fr;
+    width: 98vw;
+    height: 98vh;
     box-sizing: border-box;
 }
-
-/* button box */
-.button-div {
-    justify-self: center;
-    align-self: center;
+.button-container {
+    grid-row: 2 / 2;
+    display: flex;
+    justify-content: space-around;
 }
 
-/* all buttons */
-button {
+/* Input box */
+.input-container {
+    text-align: center;
+    grid-row: 1 / 1;
+}
+#header {
     margin: 20px;
+    margin-top: 40px;
+    font-size: 45px;
+}
+#text-input {
+    font-weight: bolder;
+    font-size: 30px;
+}
+.input-box {
+    width: 500px;
+    font-size: 30px;
+    border: 2px inset white;
+    background-color: transparent;
+    color: white;
+}
+
+/* Button styles */
+button {
     border-radius: 10px;
     border: 2px outset;
     background-color: skyblue;
-    font-size: 100%;
-    width: 100px;
-    height: 80px;
+    font-size: 200%;
+    width: 200px;
+    height: 160px;
     font-weight: bold;
-    vertical-align: top;
 }
 button:active {
-    border: 3px inset;
-    background-color: green;
+    border: 2px inset;
+}
+.empty {
+    visibility: hidden;
 }
 
-/* numbers panel */
+/* Keypad */
 .panel {
-    display: block;
-    width: 480px;
-    height: 480px;
-    text-align: center;
-    float: left;
+    display: grid;
+    column-gap: 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-
-/* letters panel */
 .lpanel {
     display: none;
-    width: 480px;
-    height: 480px;
-    text-align: center;
-    float: left;
+    column-gap: 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-/* left side buttons */
-.buttonBox {
+/* Function buttons */
+.function-buttons {
     display: grid;
-}
-.button2 {
-    margin-left: 0;
-}
-
-/* badge headers */
-.badge-container {
-    margin-left: 20px;
-    width: 620px;
-    height: 70px;
-    text-align: center;
-}
-.badge-header {
-    margin-top: 5px;
-    margin-bottom: 0px;
-    font-size: 26px;
-    font-family: 'Tahoma', Arial;
-}
-.badge-text {
-    margin: 5px;
-    font-weight: 100;
-    font-size: 20px;
-    font-family: 'Tahoma', Arial;
-}
-
-/* badge input */
-.badge-input {
-    background-color: transparent;
-    border: 2px inset white;
-    color: white;
-    font-size: 18px;
-    border-radius: 2px;
-    width: 250px;
-    height: 20px;
+    column-gap: 80px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }

@@ -299,3 +299,107 @@ button:active {
     border: 1px solid lightgray;
     border-radius: 5px;
 }
+
+/* Previous pro prompt */
+.previous-pro-prompt {
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 1fr 1fr;
+    position: absolute;
+    background-color: rgb(25, 25, 200);
+    width: 98vw;
+    height: 97vh;
+}
+.select-container {
+    grid-row: 2 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+.select-container h2 {
+    font-size: 40px;
+}
+.select-container button {
+    width: 450px;
+    height: 68px;
+    color: gray;
+}
+.previous-cancel {
+    grid-row: 3 / 3;
+    height: 70px;
+    background-color: green;
+    justify-self: end;
+    align-self: flex-end;
+    margin: 10px;
+}
+
+/* Manual pro prompt */
+.manual-pro-prompt {
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 1fr;
+    position: absolute;
+    background-color: rgb(25, 25, 200);
+    width: 98vw;
+    height: 97vh;
+}
+.manual-keys button {
+    border-radius: 10px;
+    border: 2px outset;
+    background-color: skyblue;
+    font-size: 200%;
+    width: 220px;
+    height: 150px;
+    font-weight: bold;
+    vertical-align: top;
+}
+.manual-keys button:active {
+    border: 3px inset;
+    background-color: green;
+}
+.empty {
+    visibility: hidden;
+}
+/* manual pro text */
+.manual-header-container {
+    grid-row: 1 / 1;
+    text-align: center;
+}
+.manual-header {
+    font-size: 45px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.manual-text {
+    font-size: 30px;
+}
+.manual-input {
+    background-color: transparent;
+    border: 1px inset white;
+    font-size: 30px;
+    width: 500px;
+}
+/* manual pro keypad */
+.manual-keys {
+    grid-row: 2 / 2;
+    display: flex;
+    justify-content: space-around;
+}
+.number-key-panel {
+    display: grid;
+    column-gap: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.letter-key-panel {
+    display: none;
+    column-gap: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.manual-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}

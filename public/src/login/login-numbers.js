@@ -1,8 +1,7 @@
 export let enter, minus
 
 // calling classes
-const input = document.querySelector('.badge-input')
-const message = document.querySelector('.message')
+const input = document.querySelector('.input-box')
 const lPanel = document.querySelector('.lpanel')
 const Panel = document.querySelector('.panel')
 
@@ -18,27 +17,16 @@ key.forEach(el => el.addEventListener('mousedown', () => {
 
 // Checking input is equal to an id#
 document.querySelector('#enter').addEventListener('mousedown', enter = () => {
-
-  // == send to access
-  if (input.value == exid){
-    message.style.color = 'green'
-    message.textContent = 'Access Granted!'
-    setTimeout(() => {location.href = "confirm.html"}, 750)
-  }
-
-  // != "Please enter id #"
-  else {
-    message.style.color = 'red'
-    message.textContent = 'Please enter id #'
-    setTimeout(() => {message.textContent = ''}, 1000)
+  if (input.value == exid) {
+    location.href = "confirm.html"
   }
 })
 
 // Toggle keypad type
 document.querySelector('#tKeypad').addEventListener('mousedown', () => {
   tKeys = tKeys === false ? true : false
-  lPanel.style.display = tKeys === false ? 'block' : 'none'
-  Panel.style.display = tKeys === true ? 'block' : 'none'
+  lPanel.style.display = tKeys === false ? 'grid' : 'none'
+  Panel.style.display = tKeys === true ? 'grid' : 'none'
   tKeypad.textContent = tKeys === true ? 'ABC' : '123'
 })
 

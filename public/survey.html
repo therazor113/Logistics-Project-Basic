@@ -6,7 +6,7 @@
     </head>
 <body>
 
-    <div class="container">
+    <section class="container">
         <section class="header">
             <h2>Survey:</h2>
             <h2>[<span class="areacode">NULL</span>]</h2>
@@ -16,7 +16,7 @@
             </div>
         </section>
 
-        <div class="weight-container">
+        <section class="weight-container">
             <div class="weight-text">
                 <h2>Weight: &emsp; <span class="weight">NULL</span></h2>
             </div>
@@ -24,17 +24,17 @@
                 <button class="zero-scale">Zero Scale</button>
                 <button class="scale-nw">Scale NOT Working</button>
             </div>
-        </div>
+        </section>
 
-        <div class="inspection-container">
+        <section class="inspection-container">
             <h2 class="insp-text">Equipment inspection completed?</h2>
             <div class="insp-div">
                 <button class="insp-yes" onclick="location.href='get-work.html'">Yes</button>
                 <button class="insp-no" onclick="console.log('forklift id NULL not inspected'), location.href='get-work.html'">No</button>
             </div>
-        </div>
+        </section>
 
-        <div class="info-container">
+        <section class="info-container">
             <div class="info-text">
                 <h2>Dimensioner: <span class="dim">NULL</span></h2>
                 <h2>ScaleID: <span class="scaleid">NULL</span> ,&emsp;ForkliftID: <br>
@@ -43,8 +43,19 @@
                 <h2>Badge#: <span class="badge">NULL</span></h2>
             </div>
             <button class="logout" onclick="location.href='login.html'">Logout</button>
+        </section>
+
+        <div class="prompt">
+            <h2 class="prompt-message">
+                Engagement of the <span style="color: red;">"Scale NOT Working"</span>
+                Button will be reported to Mgt, are you sure you want to disable the scale
+            </h2>
+            <div class="prompt-buttons">
+                <button class="prompt-yes">YES</button>
+                <button class="prompt-no">NO</button>
+            </div>
         </div>
-    </div>
+    </section>
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 import { enter, minus } from './login-numbers.js'
 
 // Misc variables
-const input = document.querySelector('.badge-input')
+const input = document.querySelector('.input-box')
 let xValue
 let myTimer
 

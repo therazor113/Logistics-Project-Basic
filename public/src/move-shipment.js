@@ -11,7 +11,7 @@ window.onload = () => {setInterval(() => {
 const promptWindow = document.querySelector('.prompt')
 const tags = document.querySelector('.tags-container')
 
-// Write on function
+// Write on prompt
 document.querySelector('.write').addEventListener('mousedown', () => {
   promptWindow.style.display = 'grid'
 })

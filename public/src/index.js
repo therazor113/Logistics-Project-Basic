@@ -22,8 +22,8 @@ document.querySelector('#enter').addEventListener('mousedown', enter = () => {
 // Toggle keypad type
 document.querySelector('#tKeypad').addEventListener('mousedown', () => {
   tKeys = tKeys === false ? true : false
-  lPanel.style.display = tKeys === false ? 'block' : 'none'
-  Panel.style.display = tKeys === true ? 'block' : 'none'
+  lPanel.style.display = tKeys === false ? 'grid' : 'none'
+  Panel.style.display = tKeys === true ? 'grid' : 'none'
   tKeypad.textContent = tKeys === true ? 'ABC' : '123'
 })
 

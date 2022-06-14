@@ -6,16 +6,15 @@
         <link rel="stylesheet" href="./styles/login-keypad.css">
     </head>
 <body>
-    <section class="container">
-        <div class="button-div">
-            <div class="badge-container">
-                <p class="badge-header">Please enter your badge ID. Then press Enter.</p>
-                    <p class="badge-text">Badge ID: &emsp;
-                        <input class="badge-input" type="input">
-                    </p>
-                <p class="message"></p>
-            </div>
-
+    
+    <section class="button-grid">
+        <div class="input-container">
+            <p id="header">Please enter your badge ID. Then press Enter.</p>
+                <p id="text-input">Badge ID: &emsp;
+                    <input class="input-box" type="input">
+                </p>
+        </div>
+        <section class="button-container">
             <div class="panel">
                 <button class="key">1</button>
                 <button class="key">2</button>
@@ -26,7 +25,9 @@
                 <button class="key">7</button>
                 <button class="key">8</button>
                 <button class="key">9</button>
+                <button class="empty"></button>
                 <button class="key">0</button>
+                <button class="empty"></button>
             </div>
 
             <div class="lpanel">
@@ -39,16 +40,19 @@
                 <button class="lkey">PQRS</button>
                 <button class="lkey">TUV</button>
                 <button class="lkey">WXYZ</button>
+                <button class="empty"></button>
                 <button class="lkey"></button>
+                <button class="empty"></button>
             </div>
 
-            <div class="buttonBox">
+            <div class="function-buttons">
                 <button class="button2" id="minus">Back</button>
                 <button class="button2" id="enter">Enter</button>
-                <button class="button2" onclick="location.href='login.html'">Cancel</button>
+                <button class="button2" onclick="history.back()">Cancel</button>
                 <button class="button2" id="tKeypad">ABC</button>
             </div>
-        </div>
+        </section>
     </section>
+
 </body>
 </html>

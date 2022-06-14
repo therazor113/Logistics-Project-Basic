@@ -24,7 +24,7 @@
                     <div class="ex-info">
                         <h2>HU: <span class="hu-info">N/A</span></h2>
                         <h2>Wgt: <span class="wgt-info">N/A</span></h2> 
-                        <h2>Dim: <span class="dim-info">N/A</span></h2>
+                        <h2>Dim#: <span class="dim-info">N/A</span></h2>
                     </div>
                     <h2>Load Door(s): <span class="load-info">N/A</span></h2>
                     <h2>Drop#: <span class="drop-info">N/A</span></h2>
@@ -52,7 +52,7 @@
                 <section class="pro-container">
                     <h2 class="pro-text">Pro: &emsp; &emsp; <span class="pro">NULL</span></h2>
                     <div class="pro-buttons">
-                        <button class="manual-pro" onclick="location.href='keypad.html'">Manual Pro</button>
+                        <button class="manual-pro">Manual Pro</button>
                         <button class="previous-pro">Previous Pro</button>
                     </div>
                 </section>
@@ -90,6 +90,73 @@
             <button class="prompt-ok">OK</button>
         </div>
 
+        <div class="previous-pro-prompt">
+            <section class="header">    
+                <h1>Previous Pro List:</h1>
+                <h1>[<span class="area-code">NULL</span>]</h1>
+                <div class="version-clock">
+                    <h1 class="clock2"></h1>
+                    <h2 class="version">v0.0.P</h2>
+                </div>
+            </section>
+            
+            <section class="select-container">
+                <h2>Select the Previous Pro</h2>
+                <button>Not Found</button>
+                <button>Not Found</button>
+                <button>Not Found</button>
+                <button>Not Found</button>
+                <button>Not Found</button>
+            </section>
+
+            <button class="previous-cancel">Cancel</button>
+        </div>
+
+        <div class="manual-pro-prompt">
+            <div class="manual-header-container">
+                <h2 class="manual-header">Please enter a pro number</h2>
+                <h2 class="manual-text">Pro Number: &emsp;
+                <input class="manual-input" type="input"></h2>
+            </div>
+            <div class="manual-keys">
+                <div class="number-key-panel">
+                    <button class="key">1</button>
+                    <button class="key">2</button>
+                    <button class="key">3</button>
+                    <button class="key">4</button>
+                    <button class="key">5</button>
+                    <button class="key">6</button>
+                    <button class="key">7</button>
+                    <button class="key">8</button>
+                    <button class="key">9</button>
+                    <button class="empty"></button>
+                    <button class="key">0</button>
+                    <button class="empty"></button>
+                </div>
+
+                <div class="letter-key-panel">
+                    <button class="lkey"></button>
+                    <button class="lkey">ABC</button>
+                    <button class="lkey">DEF</button>
+                    <button class="lkey">GHI</button>
+                    <button class="lkey">JKL</button>
+                    <button class="lkey">MNO</button>
+                    <button class="lkey">PQRS</button>
+                    <button class="lkey">TUV</button>
+                    <button class="lkey">WXYZ</button>
+                    <button class="empty"></button>
+                    <button class="lkey"></button>
+                    <button class="empty"></button>
+                </div>
+
+                <div class="manual-buttons">
+                    <button class="manual-minus">Back</button>
+                    <button class="manual-enter">Enter</button>
+                    <button class="manual-cancel">Cancel</button>
+                    <button class="manual-change-keys">ABC</button>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>

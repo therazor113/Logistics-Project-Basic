@@ -171,27 +171,30 @@ html, body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     position: absolute;
-    top: 40vh;
+    align-self: center;
+    justify-self: center;
     border: 2px solid white;
     background-color: black;
-    width: 98vw;
-    height: 250px;
+    width: 90vw;
+    height: 300px;
 }
 .prompt-message {
     margin: 20px;
+    margin-top: 40px;
     grid-row: 1 / 1;
     color: white;
-    font-size: 25px;
+    font-size: 40px;
+    text-align: center;
     font-weight: bold;
     font-family: sans-serif;
 }
 .prompt-ok {
     margin: 20px;
     grid-row: 2 / 3;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
-    width: 80px;
-    height: 45px;
+    width: 100px;
+    height: 50px;
     justify-self: center;
     align-self: flex-end;
 }
