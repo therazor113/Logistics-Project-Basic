@@ -30,8 +30,37 @@ p {
     height: 98vh;
 }
 
-/* Button styles */
-.keypad {
+/* Header title */
+.header {
+    grid-row: 1 / 1;
+}
+
+/* Settings section */
+.settings-container {
+    grid-row: 2 / 2;
+    display: grid;
+    grid-template-columns: 1fr 20vw;
+    grid-template-rows: 1fr;
+}
+.settings-row {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+.settings-title {
+    grid-column: 1 / 1;
+    text-align: end;
+}
+.settings-input {
+    grid-column: 2 / 2;
+    text-align: center;
+}
+.settings-keypad {
+    grid-column: 3 / 3;
+}
+.settings-keypad button {
     border-radius: 8px;
     border: 2px outset black;
     background-color: green;
@@ -40,59 +69,21 @@ p {
     width: 90px;
     height: 90px;
 }
-#placeholder {
-    visibility: hidden;
+.settings-keypad button:active {
+    border: 2px inset gray;
 }
-
-/* Header title */
-.header {
-    grid-row: 1 / 1;
-}
-
-/* Setting container */
-.settings-container {
-    grid-row: 2 / 2;
-    display: grid;
-    grid-template-columns: 1fr 20vw;
-    grid-template-rows: 1fr;
-}
-
-/* Settings table */
-.settings-table {
-    grid-row: 1 / 1;
+.settings-footer {
+    margin-bottom: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 10vh;
-}
-.settings-titles {
-    grid-column: 1 / 1;
-    grid-row: 1 / 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-.settings-inputs {
-    grid-column: 2 / 2;
-    grid-row: 1 / 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.settings-keypads {
-    grid-column: 3 / 3;
-    grid-row: 1 / 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    grid-template-rows: 1fr;
     align-items: center;
 }
 
 /* Selection container */
 .type-network-container {
     grid-column: 2 / 2;
-    grid-row: 1 / 2;
+    grid-row: 1 / 3;
     border: 3px solid white;
     display: flex;
     flex-direction: column;
@@ -108,22 +99,26 @@ p {
     border: 2px outset white;
     font-size: 30px;
 }
-/* temp */
 .type-network-container button:active {
     background-color: orange;
 }
 
-.functions-container {
+
+.nav-container {
     grid-row: 3 / 3;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
 }
-.functions-container button {
+.nav-container button {
     width: 200px;
     height: 75px;
     border: 1px solid gray;
     border-radius: 10px;
     font-size: 30px;
     font-weight: bold;
+}
+.nav-container button:active {
+    background-color: green;
+    border: 2px inset gray;
 }

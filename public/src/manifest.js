@@ -1,6 +1,3 @@
-// Misc query
-const tableSection = document.querySelector('.table-section')
-const noRecords = document.querySelector('.no-records')
 
 // *temp* data pulled from server
 let billData = [
@@ -14,7 +11,7 @@ let billData = [
   ['NULL', '(N/A)']
 ]
 
-// for each bill import, create row template
+// *temp* for each bill import, create row template
 let createBill = `
   <td><button class="pro-number">${billData[0][0]}<br>${billData[0][1]}</button></td>
   <td><p><span class="customer-name">${billData[1][0]}</span><br>${billData[1][1]}<br>${billData[1][2]}</p></td>
@@ -25,7 +22,9 @@ let createBill = `
   <td class="flag"><p>${billData[6][0]}<br></p></td>
   <td><p>Door: ${billData[7][0]}<br>${billData[7][1]}</p></td>`;
 
-// temp add data row - for testing
+// *temp* add data row - for testing
+const tableSection = document.querySelector('.table-section')
+const noRecords = document.querySelector('.no-records')
 let data = true
 let table = document.createElement("table")
 table.className = 'bill-table'
@@ -45,4 +44,13 @@ document.querySelector('.test').addEventListener('mousedown', () => {
       tableBody.appendChild(newRow).innerHTML = createBill
       break
   }
+})
+
+// *temp* Page navigation
+const billList = document.querySelector(".bill-list-container")
+document.querySelector('.next').addEventListener('mousedown', () => {
+  billList.scrollBy({ top: 1000, left: 0, behavior: 'auto' })
+})
+document.querySelector('.prev').addEventListener('mousedown', () => {
+  billList.scrollBy({ top: -1000, left: 0, behavior: 'auto' })
 })

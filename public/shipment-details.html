@@ -33,8 +33,8 @@
                     <div class="counter-container">
                         <h2 class="counter">HU: <span class="counter-span">1</span></h2>
                         <div>
-                            <button class="plus">+</button><br>
-                            <button class="minus">&minus;</button>
+                            <button class="add">+</button><br>
+                            <button class="sub">&minus;</button>
                         </div>
                         <button class="keypad">&#x2328;</button>
                     </div>
@@ -42,7 +42,7 @@
                     <section class="weight-container">
                         <h2 class="live-weight">ERR2</h2>
                         <button class="capture">Capture</button>
-                        <button class="complete" onclick="location.href='weight-check.html'">Complete</button>
+                        <button class="complete">Complete</button>
                         <button class="dimension">Dimension</button>
                     </section>
                 </section>
@@ -95,7 +95,7 @@
                 <h1>Previous Pro List:</h1>
                 <h1>[<span class="area-code">NULL</span>]</h1>
                 <div class="version-clock">
-                    <h1 class="clock2"></h1>
+                    <h1 class="clock"></h1>
                     <h2 class="version">v0.0.P</h2>
                 </div>
             </section>
@@ -156,6 +156,48 @@
                     <button class="manual-change-keys">ABC</button>
                 </div>
             </div>
+        </div>
+
+        <div class="reweigh-prompt">
+            <section class="header"> 
+                <h1>Reweigh Confirm:</h1>
+                <h1>[<span class="area-code">NULL</span>]</h1>
+                <div class="version-clock">
+                    <h1 class="clock"></h1>
+                    <h2 class="version">v0.0.P</h2>
+                </div>
+            </section>
+
+            <section class="reweigh-info">
+                <div>
+                    <h2 class="billed-box-header">PRO:</h2>
+                    <div class="reweigh-data">
+                        <h2 class="reweigh-title"><u>Billed Data</u></h2>
+                        <h2 class="reweigh-hu">HU: </h2>
+                        <span class="reweigh-hu-count">NULL</span>
+                        <h2 class="reweigh-weight">WEIGHT: </h2>
+                        <span class="reweigh-weight-count">NULL</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="reweigh-box-header">NULL</h2>
+                    <div class="reweigh-data">
+                        <h2 class="reweigh-title"><u>Reweigh Data</u></h2>
+                        <h2 class="reweigh-hu">HU: </h2>
+                        <span class="reweigh-hu-count">NULL</span>
+                        <h2 class="reweigh-weight">WEIGHT: </h2>
+                        <span class="reweigh-weight-count">NULL</span>
+                    </div>
+                </div>
+            </section>
+
+            <h2 class="reweigh-box-footer">* * * * * Check HU * * * * *</h2>
+
+            <section class="reweigh-buttons">
+                <button class="reweigh-confirm">Confirm</button>
+                <button class="reweigh-cancel">Cancel</button>
+            </section>
         </div>
     </section>
 </body>

@@ -10,29 +10,29 @@
                 <h2>Device Info:</h2>
             </section>
                 <section class="settings-container">
-                    <section class="settings-table">
-                        <div class="settings-titles">
-                            <h2>Terminal Code:</h2>
-                            <h2>Forklift ID:</h2>
-                            <h2>Scale Indicator ID:</h2>
-                            <br>
-                            <h2>Device ID:</h2>
+                    <section>
+                        <div class="settings-row">
+                            <div class="settings-title"><h2>Terminal Code:</h2></div>
+                            <div class="settings-input"><p>NULL</p></div>
+                            <div class="settings-keypad"><button class="edit-terminal">&#x2328;</button></div>
                         </div>
-                        <div class="settings-inputs">
-                            <p>NULL</p>
-                            <p>NULL</p>
-                            <p>NULL</p>
-                            <br>
-                            <p>NULL</p>
+                        <div class="settings-row">
+                            <div class="settings-title"><h2>Forklift ID:</h2></div>
+                            <div class="settings-input"><p>NULL</p></div>
+                            <div class="settings-keypad"><button class="edit-forklift">&#x2328;</button></div>
                         </div>
-                        <div class="settings-keypads">
-                            <button class="keypad" id="edit-terminal">&#x2328;</button>
-                            <button class="keypad" id="edit-forklift">&#x2328;</button>
-                            <button class="keypad" id="edit-scale">&#x2328;</button>
-                            <br>
-                            <button class="keypad" id="placeholder">&#x2328;</button>
+                        <div class="settings-row">
+                            <div class="settings-title"><h2>Scale Indicator ID:</h2></div>
+                            <div class="settings-input"><p>NULL</p></div>
+                            <div class="settings-keypad"><button class="edit-scale">&#x2328;</button></div>
                         </div>
                     </section>
+
+                    <div class="settings-footer">
+                        <div class="settings-title"><h2>Device ID:</h2></div>
+                        <div class="settings-input"><p>NULL</p></div>
+                     </div>
+
                     <section class="type-network-container">
                         <h2>Type</h2>
                         <button class="reweigh">Reweigh</button>
@@ -45,7 +45,7 @@
                     </section>
                 </section>
 
-            <section class="functions-container">
+            <section class="nav-container">
                 <button class="edit">Edit</button>
                 <button class="submit">Submit</button>
                 <button class="cancel" onclick="location.href='survey.html'">Cancel</button>

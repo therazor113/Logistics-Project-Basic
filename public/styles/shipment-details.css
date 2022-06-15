@@ -50,7 +50,7 @@ button:active {
     width: 90px;
     height: 90px;
 }
-.plus, .minus {
+.add, .sub {
     margin-top: 10px;
     background-color: orange;
     width: 100px;
@@ -402,4 +402,72 @@ button:active {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+/* Reweigh prompt */
+.reweigh-prompt {
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 1fr 0fr 30vh;
+    position: absolute;
+    background-color: rgb(25, 25, 200);
+    width: 98vw;
+    height: 97vh;
+}
+.reweigh-info {
+    grid-row: 2 / 2;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-end;
+}
+.reweigh-data {
+    width: 500px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 35px;
+    text-align: center;
+}
+.reweigh-title {
+    margin-top: 30px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 1;
+}
+.reweigh-box-header {
+    font-size: 40px;
+    text-align: start;
+}
+.billed-box-header {
+    font-size: 40px;
+    text-align: end;
+}
+.reweigh-hu-count {
+    width: 180px;
+    height: 50px;
+    text-align: end;
+    padding-top: 10px;
+    color: black;
+    background-color: yellow;
+}
+.reweigh-weight-count {
+    width: 180px;
+    height: 50px;
+    text-align: end;
+    padding-top: 10px;
+}
+.reweigh-buttons {
+    grid-row: 4 / 4;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+.reweigh-box-footer {
+    color: yellow;
+    font-size: 50px;
+    justify-self: center;
+    grid-row: 3 / 3;
 }
