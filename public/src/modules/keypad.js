@@ -1,4 +1,4 @@
-// Doc queries
+// Document queries
   const inputBox = document.querySelector('.input-box')
   const numberPanel = document.querySelector('.number-panel')
   const letterPanel = document.querySelector('.letter-panel')
@@ -29,7 +29,7 @@ export const letPad = () => {
       xValue = null
       return
     }
-    // Input next letter on button pushed || input button pressed
+    // *temp* Input next letter on button pushed || input button pressed
     switch(xValue){
       case '':
       default:
@@ -78,7 +78,7 @@ export const backspaceButton = () => {
     inputBox.value = inputBox.value.substring(0, inputBox.value.length - 1)
   })
 }
-// Enter
+// *temp* Enter
 export const enterButton = (exid) => {
   document.querySelector('.enter').addEventListener('mousedown', () => {
     clearTimeout(myTimer)
@@ -86,12 +86,16 @@ export const enterButton = (exid) => {
     if (inputBox.value == exid) {
       location.href = "confirm.html"
     }
+    else if (inputBox.value == exid) {
+      location.href = "move-confirmation.html"
+    }
   })
 }
 // Cancel
 export const keypadCancel = () => {
   document.querySelector('.cancel').addEventListener('mousedown', () => {
     keypadWindow.style.display = 'none'
+    inputBox.value = ''
   })
 }
 // Toggle keypad type

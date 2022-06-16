@@ -157,10 +157,10 @@ html, body {
     font-size: 27px;
     border: 1px solid gray;
 }
-.nav-button-container button:active:not(.empty) {
+.nav-button-container button:active:not(.testing) {
     background-color: green;
 }
-.empty {
+.testing {
     background-color: gray;
     color: white;
 }
@@ -197,4 +197,85 @@ html, body {
     height: 50px;
     justify-self: center;
     align-self: flex-end;
+}
+
+/* Keypad container */
+.keypad-container {
+    font-family: sans-serif;
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 1fr;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: white;
+}
+.panel-container {
+    grid-row: 2 / 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Input div */
+.input-div {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Input box */
+.input-container {
+    text-align: center;
+    grid-row: 1 / 1;
+}
+.input-title {
+    margin: 20px;
+    margin-top: 40px;
+    font-size: 45px;
+}
+.input-header {
+    font-weight: bolder;
+    font-size: 30px;
+}
+.input-box {
+    width: 500px;
+    font-size: 30px;
+}
+
+/* Button styles */
+.panel-container button {
+    border-radius: 10px;
+    border: 2px outset;
+    background-color: green;
+    font-size: 200%;
+    width: 200px;
+    height: 160px;
+    font-weight: bold;
+}
+.panel-container button:active:not(.disabled) {
+    border: 2px inset;
+}
+.disabled {
+    color: gray;
+}
+.empty {
+    visibility: hidden;
+}
+
+/* Keypad */
+.number-panel {
+    display: grid;
+    column-gap: 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+/* Function buttons */
+.function-buttons {
+    display: grid;
+    column-gap: 80px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }

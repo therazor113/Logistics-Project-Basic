@@ -17,3 +17,9 @@ export const openKeypad = () => {
     keypadWindow.style.display = 'grid'
   })
 }
+
+// Open keyPad if multiple on page
+export const multiOpenKeypad = (container) => {
+  const keypadWindow = document.querySelector(container)
+  keypadWindow.style.display = 'grid'
+}
