@@ -1,11 +1,24 @@
+import { liveClock, openKeypad } from './modules/index.js'
+import { numPad, letPad, backspaceButton, enterButton, keypadCancel, toggleKeypad } from './modules/keypad.js'
 
-// live clock - temp 2nd clock
-const clock = document.querySelectorAll('.clock')
-window.onload = () => {setInterval(() => {
-  let date = new Date()
-  let time = date.toDateString() + " " + date.toLocaleTimeString()
-  clock.forEach(el => {el.textContent = time}), 1000}
-)}
+// live clock
+liveClock()
+
+// Open keypad
+openKeypad()
+// Number pad
+numPad()
+// Letter pad
+letPad()
+// Back
+backspaceButton()
+// Enter
+enterButton()
+// Cancel
+keypadCancel()
+// Toggle keypad
+toggleKeypad()
+
 
 // Add HU count
 const counter = document.querySelector('.counter-span')
@@ -42,29 +55,6 @@ document.querySelector('.previous-pro').addEventListener('mousedown', () => {
 // Previous pro close
 document.querySelector('.previous-cancel').addEventListener('mousedown', () => {
   previousProWindow.style.display = 'none'
-})
-
-// Manual pro keypad
-const manualProWindow = document.querySelector('.manual-pro-prompt')
-document.querySelector('.manual-pro').addEventListener('mousedown', () => {
-  manualProWindow.style.display = 'grid'
-})
-// Manual pro enter
-document.querySelector('.manual-enter').addEventListener('mousedown', () => {
-  manualProWindow.style.display = 'none'
-})
-// Manual pro close
-document.querySelector('.manual-cancel').addEventListener('mousedown', () => {
-  manualProWindow.style.display = 'none'
-})
-// Manual pro functions
-const changeKeypad = document.querySelector('.manual-change-keys')
-const numberKeys = document.querySelector('.number-key-panel')
-const letterKeys = document.querySelector('.letter-key-panel')
-changeKeypad.addEventListener('mousedown', () => {
-  changeKeypad.textContent = changeKeypad.textContent === 'ABC' ? '123' : 'ABC'
-  letterKeys.style.display = letterKeys.style.display === 'grid' ? 'none' : 'grid'
-  numberKeys.style.display = numberKeys.style.display === 'none' ? 'grid' : 'none'
 })
 
 // Complete temp function

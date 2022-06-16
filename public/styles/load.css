@@ -10,8 +10,8 @@ html, body {
     font-family: sans-serif;
 }
 
-/* Grid container */
-.button-grid {
+/* Keypad container */
+.keypad-container {
     margin: 10px;
     display: grid;
     grid-template-columns: 1fr;
@@ -20,7 +20,7 @@ html, body {
     height: 98vh;
     box-sizing: border-box;
 }
-.button-container {
+.panel-container {
     grid-row: 2 / 2;
     display: flex;
     justify-content: space-around;
@@ -31,12 +31,12 @@ html, body {
     text-align: center;
     grid-row: 1 / 1;
 }
-#header {
+.input-title {
     margin: 20px;
     margin-top: 40px;
     font-size: 45px;
 }
-#text-input {
+.input-header {
     font-weight: bolder;
     font-size: 30px;
 }
@@ -55,10 +55,10 @@ button {
     height: 160px;
     font-weight: bold;
 }
-button:active {
+button:active:not(.disabled) {
     border: 2px inset;
 }
-#change-keypad {
+.disabled {
     color: gray;
 }
 .empty {
@@ -66,7 +66,7 @@ button:active {
 }
 
 /* Keypad */
-.panel {
+.number-panel {
     display: grid;
     column-gap: 80px;
     grid-template-columns: 1fr 1fr 1fr;
