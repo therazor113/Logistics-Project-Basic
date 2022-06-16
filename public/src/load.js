@@ -1,4 +1,4 @@
-import { toggleKeypad, numPad, enterButton, backspaceButton } from './modules/keypad.js'
+import { numPad, enterButton, backspaceButton } from './modules/keypad.js'
 
 // Number pad
 numPad()
@@ -6,5 +6,3 @@ numPad()
 backspaceButton()
 // Enter
 enterButton()
-// Toggle keypad
-toggleKeypad()

@@ -1,27 +1,20 @@
+import { liveClock } from './modules/index.js'
 
 // live clock
-const clock = document.querySelector('.clock')
-window.onload = () => {setInterval(() => {
-  let date = new Date()
-  let time = date.toDateString() + " " + date.toLocaleTimeString()
-  clock.textContent = time, 1000}
-)}
-
-// Query classes
-const promptWindow = document.querySelector('.prompt')
-const tags = document.querySelector('.tags-container')
+liveClock()
 
 // Write on prompt
+const promptWindow = document.querySelector('.prompt')
 document.querySelector('.write').addEventListener('mousedown', () => {
   promptWindow.style.display = 'grid'
 })
-
-// Prompt clear
+// Prompt ok
 document.querySelector('.prompt-ok').addEventListener('mousedown', () => {
   promptWindow.style.display = 'none'
 })
 
 // Temp for tags
+const tags = document.querySelector('.tags-container')
 document.querySelector('.empty').addEventListener('mousedown', () => {
   tags.style.display = tags.style.display == 'block' ? 'none' : 'block'
 })

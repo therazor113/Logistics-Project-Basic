@@ -6,5 +6,3 @@ numPad()
 backspaceButton()
 // Enter
 enterButton()
-// Toggle keypad
-toggleKeypad()
