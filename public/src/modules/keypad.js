@@ -4,8 +4,6 @@
   const letterPanel = document.querySelector('.letter-panel')
   const keypadButton = document.querySelector('.change-keypad')
   const keypadWindow = document.querySelector('.keypad-container')
-  let myTimer
-  let xValue
 
 // Number keys
 export const numPad = () => {
@@ -14,6 +12,8 @@ export const numPad = () => {
   }))
 }
 // Letter keys
+let myTimer
+let xValue
 export const letPad = () => {
   document.querySelectorAll('.letkey').forEach(el => el.addEventListener('mousedown', () => {
 
@@ -21,7 +21,7 @@ export const letPad = () => {
     myTimer = setTimeout(() => {xValue = null}, 750)
 
     if (!el.textContent) {
-      xValue = null
+      xValue = null 
       return
     }
     else if (el.textContent.length >= 5) {
@@ -86,7 +86,7 @@ export const enterButton = (exid) => {
     if (inputBox.value == exid) {
       location.href = "confirm.html"
     }
-    else if (inputBox.value == exid) {
+    else if (inputBox.value == 5678) { // *temp* needs to be changed
       location.href = "move-confirmation.html"
     }
   })
